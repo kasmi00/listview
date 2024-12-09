@@ -1,15 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:listview_class/view/student_details_view.dart';
-import 'package:listview_class/view/student_output_view.dart';
+import 'app.dart'; // Import the app.dart file
 
 void main() {
-  runApp(
-    MaterialApp(
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const StudentDetailsView(),
-        '/output': (context) => const StudentOutputView(),
-      },
-    ),
-  );
+  runApp(const MyApp()); // Start with the MyApp widget from app.dart
 }
